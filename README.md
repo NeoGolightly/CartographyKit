@@ -10,7 +10,7 @@ constrain(view1) { view1 in
 }
 ```
 
-CartographyKit uses Cartography under the hood but but makes working with it much easier for simple layouts:
+CartographyKit uses Cartography under the hood but makes working with it much easier for simple layouts:
 
 ```Swift
 CartographyKit.height(view: yourView)
