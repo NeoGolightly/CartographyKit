@@ -10,6 +10,8 @@
 		DF79EA791D0D8BA000BE6573 /* CartographyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DF79EA781D0D8BA000BE6573 /* CartographyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF79EA8E1D0D962900BE6573 /* CartographyKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF79EA8D1D0D962900BE6573 /* CartographyKit.swift */; };
 		DF79EAA11D0DA21E00BE6573 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF79EAA01D0DA21E00BE6573 /* Cartography.framework */; };
+		DF79EAB21D0DBCF300BE6573 /* Info-macOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF79EAB11D0DBCF300BE6573 /* Info-macOS.plist */; };
+		DF79EAB41D0DBD0800BE6573 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF79EAB31D0DBD0800BE6573 /* Cartography.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +23,9 @@
 		DF79EA801D0D8DE700BE6573 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DF79EA8D1D0D962900BE6573 /* CartographyKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartographyKit.swift; sourceTree = "<group>"; };
 		DF79EAA01D0DA21E00BE6573 /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/CartographyKit-frkxzxmvaxthrrdbnggtzvvbvneg/Build/Products/Debug-iphonesimulator/Cartography.framework"; sourceTree = "<group>"; };
-		DF79EAA21D0DA22400BE6573 /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/CartographyKit-frkxzxmvaxthrrdbnggtzvvbvneg/Build/Products/Debug-appletvsimulator/Cartography.framework"; sourceTree = "<group>"; };
+		DF79EAA91D0DBCD400BE6573 /* CartographyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CartographyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF79EAB11D0DBCF300BE6573 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
+		DF79EAB31D0DBD0800BE6573 /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/CartographyKit-frkxzxmvaxthrrdbnggtzvvbvneg/Build/Products/Debug/Cartography.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,13 +37,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF79EAA51D0DBCD400BE6573 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF79EAB41D0DBD0800BE6573 /* Cartography.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		DF79EA181D0D87C500BE6573 = {
 			isa = PBXGroup;
 			children = (
-				DF79EAA21D0DA22400BE6573 /* Cartography.framework */,
+				DF79EAB31D0DBD0800BE6573 /* Cartography.framework */,
 				DF79EAA01D0DA21E00BE6573 /* Cartography.framework */,
 				DF79EA7D1D0D8DD500BE6573 /* MetaData */,
 				DF79EA631D0D894000BE6573 /* CartographyKit */,
@@ -51,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				DF79EA241D0D882600BE6573 /* CartographyKit.framework */,
+				DF79EAA91D0DBCD400BE6573 /* CartographyKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +73,7 @@
 			children = (
 				DF79EA8D1D0D962900BE6573 /* CartographyKit.swift */,
 				DF79EA781D0D8BA000BE6573 /* CartographyKit.h */,
+				DF79EAB11D0DBCF300BE6573 /* Info-macOS.plist */,
 				DF79EA641D0D8A4200BE6573 /* Info-iOS.plist */,
 			);
 			path = CartographyKit;
@@ -86,6 +100,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF79EAA61D0DBCD400BE6573 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -107,6 +128,24 @@
 			productReference = DF79EA241D0D882600BE6573 /* CartographyKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		DF79EAA81D0DBCD400BE6573 /* CartographyKit macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF79EAAE1D0DBCD400BE6573 /* Build configuration list for PBXNativeTarget "CartographyKit macOS" */;
+			buildPhases = (
+				DF79EAA41D0DBCD400BE6573 /* Sources */,
+				DF79EAA51D0DBCD400BE6573 /* Frameworks */,
+				DF79EAA61D0DBCD400BE6573 /* Headers */,
+				DF79EAA71D0DBCD400BE6573 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CartographyKit macOS";
+			productName = "CartographyKit macOS";
+			productReference = DF79EAA91D0DBCD400BE6573 /* CartographyKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -116,6 +155,9 @@
 				LastUpgradeCheck = 0730;
 				TargetAttributes = {
 					DF79EA231D0D882600BE6573 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					DF79EAA81D0DBCD400BE6573 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -133,12 +175,21 @@
 			projectRoot = "";
 			targets = (
 				DF79EA231D0D882600BE6573 /* CartographyKit iOS */,
+				DF79EAA81D0DBCD400BE6573 /* CartographyKit macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DF79EA221D0D882600BE6573 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF79EAB21D0DBCF300BE6573 /* Info-macOS.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF79EAA71D0DBCD400BE6573 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -153,6 +204,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF79EA8E1D0D962900BE6573 /* CartographyKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF79EAA41D0DBCD400BE6573 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +350,118 @@
 			};
 			name = Release;
 		};
+		DF79EAAF1D0DBCD400BE6573 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CartographyKit/Info-macOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.at-design.CartographyKit-macOS";
+				PRODUCT_NAME = CartographyKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DF79EAB01D0DBCD400BE6573 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CartographyKit/Info-macOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.at-design.CartographyKit-macOS";
+				PRODUCT_NAME = CartographyKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -312,6 +482,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		DF79EAAE1D0DBCD400BE6573 /* Build configuration list for PBXNativeTarget "CartographyKit macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF79EAAF1D0DBCD400BE6573 /* Debug */,
+				DF79EAB01D0DBCD400BE6573 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
