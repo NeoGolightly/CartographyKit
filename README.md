@@ -4,6 +4,9 @@
 ```Swift
 constrain(view1) { view1 in
 		view1.height == view.superview!.height
+		view1.left == view.superview!.left
+		view1.right == view.superview!.right
+		view1.centerX == view.superview!.centerX
 }
 ```
 
