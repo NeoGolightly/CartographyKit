@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DADB2FA593B768BE4D4EC04C1251C4C8185B9C93",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DADB2FA593B768BE4D4EC04C1251C4C8185B9C93" : 0,
+    "364D2E5F611143E7C4D0A99C691B1988FBD5381F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "818E9975-0719-459D-854D-F35175C1DA62",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DADB2FA593B768BE4D4EC04C1251C4C8185B9C93" : "CartographyKit\/",
+    "364D2E5F611143E7C4D0A99C691B1988FBD5381F" : "CartographyKit\/Carthage\/Checkouts\/Cartography\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CartographyKit",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CartographyKit.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/robb\/Cartography.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "364D2E5F611143E7C4D0A99C691B1988FBD5381F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NeoGolightly\/CartographyKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DADB2FA593B768BE4D4EC04C1251C4C8185B9C93"
+    }
+  ]
+}
