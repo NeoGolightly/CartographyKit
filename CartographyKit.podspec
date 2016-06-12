@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CartographyKit"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "A little helper that simplifies the Cartography Autolayout framework"
 
   # This description is used to generate tags and improve search results.
@@ -70,7 +70,7 @@ Pod::Spec.new do |s|
   #  When using multiple platforms
   s.ios.deployment_target = "9.0"
   # s.osx.deployment_target = "10.9"
-  s.tvos.deployment_target = "9.0"
+  # s.tvos.deployment_target = "9.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -116,7 +116,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
+  s.framework  = "Cartography"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
@@ -132,6 +132,6 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "Cartography", "~> 0.5"
+  s.dependency "Cartography"
 
 end

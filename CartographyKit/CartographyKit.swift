@@ -63,7 +63,7 @@ private protocol LayoutConstrainEquals{
     static func height(view: View, equals: CGFloat)
 }
 
-private protocol LayoutConstrainToOtherView{
+private protocol CartographyKitoOtherView{
     static func topToOtherViewsBottom(view1: View, otherView: View, plus: CGFloat)
     static func bottomToOtherViewsTop(view1: View, otherView: View, minus: CGFloat)
 }
@@ -74,7 +74,7 @@ private protocol LayoutConstrainEdges{
     static func edges(view: View, insets: UIEdgeInsets)
 }
 
-public struct LayoutConstraintProxy{
+public struct CartographyKitProxy{
     
 }
 
@@ -82,7 +82,7 @@ public struct LayoutConstraintProxy{
 public typealias View = UIView
 
 ///Normal Constraints
-extension LayoutConstraintProxy: LayoutConstrainBasic{
+extension CartographyKitProxy: LayoutConstrainBasic{
     
     public static func top(view: View){
         constrain(view){ view in
@@ -100,7 +100,7 @@ extension LayoutConstraintProxy: LayoutConstrainBasic{
     
     
     public static func width(view: View)  -> NSLayoutConstraint?{
-        var c: NSLayoutConstraint?
+        var c: NSCartographyKit?
         constrain(view){ view in
             c = view.width == view.superview!.width
             return
@@ -216,7 +216,7 @@ extension LayoutConstraintProxy: LayoutConstrainBasic{
 }
 
 //MARK: - Divided and Multiplied Minus Plus
-public extension LayoutConstraintProxy{
+public extension CartographyKitProxy{
     
     public static func top(view: View, plus: CGFloat){
         constrain(view){ view in
@@ -340,7 +340,7 @@ public extension LayoutConstraintProxy{
 }
 
 //MARK: - Square
-public extension LayoutConstraintProxy{
+public extension CartographyKitProxy{
     
     public static func squareEqualsWidth(view: View) {
         constrain(view){ view in
@@ -395,7 +395,7 @@ public extension LayoutConstraintProxy{
 
 
 //MARK: - Halfs
-public extension LayoutConstraintProxy{
+public extension CartographyKitProxy{
     
     public static func halfWidth(view: View){
         constrain(view){ view in
@@ -414,7 +414,7 @@ public extension LayoutConstraintProxy{
 
 
 //MARK: - Pins
-public extension LayoutConstraintProxy{
+public extension CartographyKitProxy{
     public static func pinTop(view: View) {
         constrain(view){ view in
             view.top == view.superview!.top
@@ -480,7 +480,7 @@ public extension LayoutConstraintProxy{
 }
 
 
-extension LayoutConstraintProxy: LayoutConstrainEquals{
+extension CartographyKitProxy: LayoutConstrainEquals{
     public static func width(view: View, equals: CGFloat){
         constrain(view){ view in
             view.width == equals
@@ -496,7 +496,7 @@ extension LayoutConstraintProxy: LayoutConstrainEquals{
 
 
 //MARK: - To other views
-extension LayoutConstraintProxy: LayoutConstrainToOtherView{
+extension CartographyKitProxy: CartographyKitoOtherView{
     
     public static func topToOtherViewsBottom(view1: View, otherView: View, plus: CGFloat) {
         constrain(view1, otherView){view1, otherView in
@@ -514,7 +514,7 @@ extension LayoutConstraintProxy: LayoutConstrainToOtherView{
     }
 }
 
-extension LayoutConstraintProxy: LayoutConstrainEdges{
+extension CartographyKitProxy: LayoutConstrainEdges{
     public static func edges(view: View, plus: CGFloat) {
         constrain(view){ view in
             view.top == view.superview!.top + plus
