@@ -490,6 +490,7 @@
 				DF79EAB01D0DBCD400BE6573 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
