@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Carthage/Checkouts/Cartography/Cartography.xcodeproj">
+      location = "group:../../Libraries/Cartography 1.0.1/Cartography.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:CartographyKit.xcodeproj">
