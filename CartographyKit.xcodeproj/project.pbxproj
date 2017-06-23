@@ -9,10 +9,54 @@
 /* Begin PBXBuildFile section */
 		DF79EA791D0D8BA000BE6573 /* CartographyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DF79EA781D0D8BA000BE6573 /* CartographyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF79EA8E1D0D962900BE6573 /* CartographyKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF79EA8D1D0D962900BE6573 /* CartographyKit.swift */; };
-		DF79EAA11D0DA21E00BE6573 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF79EAA01D0DA21E00BE6573 /* Cartography.framework */; };
 		DF79EAB21D0DBCF300BE6573 /* Info-macOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF79EAB11D0DBCF300BE6573 /* Info-macOS.plist */; };
-		DF79EAB41D0DBD0800BE6573 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF79EAB31D0DBD0800BE6573 /* Cartography.framework */; };
+		DF9D9D0C1EFDA5BC001AAB64 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9D9D011EFDA5A0001AAB64 /* Cartography.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF9D9D001EFDA5A0001AAB64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF9D9CF71EFDA5A0001AAB64 /* Cartography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 54C96A11195063CD000CDD27;
+			remoteInfo = "Cartography-iOS";
+		};
+		DF9D9D021EFDA5A0001AAB64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF9D9CF71EFDA5A0001AAB64 /* Cartography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 54C96A1C195063CD000CDD27;
+			remoteInfo = "Cartography-iOS-Tests";
+		};
+		DF9D9D041EFDA5A0001AAB64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF9D9CF71EFDA5A0001AAB64 /* Cartography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 54F6A838195C20C100313D24;
+			remoteInfo = "Cartography-Mac";
+		};
+		DF9D9D061EFDA5A0001AAB64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF9D9CF71EFDA5A0001AAB64 /* Cartography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 54F6A842195C20C200313D24;
+			remoteInfo = "Cartography-Mac-Tests";
+		};
+		DF9D9D081EFDA5A0001AAB64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF9D9CF71EFDA5A0001AAB64 /* Cartography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 632F090A1BF1E7AA002431A3;
+			remoteInfo = "Cartography-tvOS";
+		};
+		DF9D9D0A1EFDA5A0001AAB64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF9D9CF71EFDA5A0001AAB64 /* Cartography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 632F09221BF1E7FC002431A3;
+			remoteInfo = "Cartography-tvOS-tests";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DF79EA241D0D882600BE6573 /* CartographyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CartographyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +66,9 @@
 		DF79EA7F1D0D8DE700BE6573 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DF79EA801D0D8DE700BE6573 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DF79EA8D1D0D962900BE6573 /* CartographyKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartographyKit.swift; sourceTree = "<group>"; };
-		DF79EAA01D0DA21E00BE6573 /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/CartographyKit-frkxzxmvaxthrrdbnggtzvvbvneg/Build/Products/Debug-iphonesimulator/Cartography.framework"; sourceTree = "<group>"; };
 		DF79EAA91D0DBCD400BE6573 /* CartographyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CartographyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF79EAB11D0DBCF300BE6573 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
-		DF79EAB31D0DBD0800BE6573 /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/CartographyKit-frkxzxmvaxthrrdbnggtzvvbvneg/Build/Products/Debug/Cartography.framework"; sourceTree = "<group>"; };
+		DF9D9CF71EFDA5A0001AAB64 /* Cartography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cartography.xcodeproj; path = "../../Libraries/Cartography 1.1.0/Cartography.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF79EAA11D0DA21E00BE6573 /* Cartography.framework in Frameworks */,
+				DF9D9D0C1EFDA5BC001AAB64 /* Cartography.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +84,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF79EAB41D0DBD0800BE6573 /* Cartography.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,11 +93,11 @@
 		DF79EA181D0D87C500BE6573 = {
 			isa = PBXGroup;
 			children = (
-				DF79EAB31D0DBD0800BE6573 /* Cartography.framework */,
-				DF79EAA01D0DA21E00BE6573 /* Cartography.framework */,
+				DF9D9CF71EFDA5A0001AAB64 /* Cartography.xcodeproj */,
 				DF79EA7D1D0D8DD500BE6573 /* MetaData */,
 				DF79EA631D0D894000BE6573 /* CartographyKit */,
 				DF79EA251D0D882600BE6573 /* Products */,
+				DF9D9CF21EFDA541001AAB64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +129,26 @@
 				DF79EA801D0D8DE700BE6573 /* README.md */,
 			);
 			name = MetaData;
+			sourceTree = "<group>";
+		};
+		DF9D9CF21EFDA541001AAB64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF9D9CF81EFDA5A0001AAB64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF9D9D011EFDA5A0001AAB64 /* Cartography.framework */,
+				DF9D9D031EFDA5A0001AAB64 /* Cartography-iOS-Tests.xctest */,
+				DF9D9D051EFDA5A0001AAB64 /* Cartography.framework */,
+				DF9D9D071EFDA5A0001AAB64 /* Cartography-Mac-Tests.xctest */,
+				DF9D9D091EFDA5A0001AAB64 /* Cartography.framework */,
+				DF9D9D0B1EFDA5A0001AAB64 /* Cartography-tvOS-tests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +214,7 @@
 		DF79EA191D0D87C500BE6573 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				TargetAttributes = {
 					DF79EA231D0D882600BE6573 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -173,6 +235,12 @@
 			mainGroup = DF79EA181D0D87C500BE6573;
 			productRefGroup = DF79EA251D0D882600BE6573 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DF9D9CF81EFDA5A0001AAB64 /* Products */;
+					ProjectRef = DF9D9CF71EFDA5A0001AAB64 /* Cartography.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DF79EA231D0D882600BE6573 /* CartographyKit iOS */,
@@ -180,6 +248,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DF9D9D011EFDA5A0001AAB64 /* Cartography.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cartography.framework;
+			remoteRef = DF9D9D001EFDA5A0001AAB64 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DF9D9D031EFDA5A0001AAB64 /* Cartography-iOS-Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Cartography-iOS-Tests.xctest";
+			remoteRef = DF9D9D021EFDA5A0001AAB64 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DF9D9D051EFDA5A0001AAB64 /* Cartography.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cartography.framework;
+			remoteRef = DF9D9D041EFDA5A0001AAB64 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DF9D9D071EFDA5A0001AAB64 /* Cartography-Mac-Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Cartography-Mac-Tests.xctest";
+			remoteRef = DF9D9D061EFDA5A0001AAB64 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DF9D9D091EFDA5A0001AAB64 /* Cartography.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cartography.framework;
+			remoteRef = DF9D9D081EFDA5A0001AAB64 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DF9D9D0B1EFDA5A0001AAB64 /* Cartography-tvOS-tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Cartography-tvOS-tests.xctest";
+			remoteRef = DF9D9D0A1EFDA5A0001AAB64 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DF79EA221D0D882600BE6573 /* Resources */ = {
@@ -222,6 +335,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -229,6 +361,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -250,7 +400,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -314,7 +464,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
