@@ -92,6 +92,7 @@ public struct CartographyKit{
 ///Normal Constraints
 extension CartographyKit: LayoutConstrainBasic{
   
+  @discardableResult
   public static func top(_ view: View) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -101,6 +102,7 @@ extension CartographyKit: LayoutConstrainBasic{
     return c
   }
   
+  @discardableResult
   public static func bottom(_ view: View) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -110,7 +112,7 @@ extension CartographyKit: LayoutConstrainBasic{
     return c
   }
   
-  
+  @discardableResult
   public static func width(_ view: View) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -120,6 +122,7 @@ extension CartographyKit: LayoutConstrainBasic{
     return c
   }
   
+  @discardableResult
   public static func height(_ view: View) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -129,6 +132,7 @@ extension CartographyKit: LayoutConstrainBasic{
     return c
   }
   
+  @discardableResult
   public static func right(_ view: View) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -138,6 +142,7 @@ extension CartographyKit: LayoutConstrainBasic{
     return c
   }
   
+  @discardableResult
   public static func left(_ view: View) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -147,6 +152,7 @@ extension CartographyKit: LayoutConstrainBasic{
     return c
   }
   
+  @discardableResult
   public static func leading(_ view: View) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -156,6 +162,7 @@ extension CartographyKit: LayoutConstrainBasic{
     return c
   }
   
+  @discardableResult
   public static func trailing(_ view: View) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -165,6 +172,7 @@ extension CartographyKit: LayoutConstrainBasic{
     return c
   }
   
+  @discardableResult
   public static func center(_ view: View) -> [NSLayoutConstraint?]{
     var c: [NSLayoutConstraint?] = []
     constrain(view){ view in
@@ -174,6 +182,7 @@ extension CartographyKit: LayoutConstrainBasic{
     return c
   }
   
+  @discardableResult
   public static func centerX(_ view: View) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -183,6 +192,7 @@ extension CartographyKit: LayoutConstrainBasic{
     return c
   }
   
+  @discardableResult
   public static func centerY(_ view: View) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -192,6 +202,7 @@ extension CartographyKit: LayoutConstrainBasic{
     return c
   }
   #if os(iOS)
+  @discardableResult
   public static func leftMargin(_ view: View) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -201,6 +212,7 @@ extension CartographyKit: LayoutConstrainBasic{
     return c
   }
   
+  @discardableResult
   public static func rightMargin(_ view: View) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -210,6 +222,7 @@ extension CartographyKit: LayoutConstrainBasic{
     return c
   }
   
+  @discardableResult
   public static func topMargin(_ view: View) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -219,6 +232,7 @@ extension CartographyKit: LayoutConstrainBasic{
     return c
   }
   
+  @discardableResult
   public static func bottomMargin(_ view: View) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -228,6 +242,7 @@ extension CartographyKit: LayoutConstrainBasic{
     return c
   }
   @available(OSX 10.9, *)
+  @discardableResult
   public static func leadingMargin(_ view: View) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -237,6 +252,7 @@ extension CartographyKit: LayoutConstrainBasic{
     return c
   }
   @available(OSX 10.9, *)
+  @discardableResult
   public static func trailingMargin(_ view: View) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -247,6 +263,7 @@ extension CartographyKit: LayoutConstrainBasic{
   }
   #endif
   
+  @discardableResult
   public static func edges(_ view: View)  -> [NSLayoutConstraint?]{
     var c: [NSLayoutConstraint?] = []
     constrain(view){ view in
@@ -260,6 +277,7 @@ extension CartographyKit: LayoutConstrainBasic{
 //MARK: - Divided and Multiplied Minus Plus
 public extension CartographyKit{
   
+  @discardableResult
   public static func top(_ view: View, plus: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -269,6 +287,7 @@ public extension CartographyKit{
     return c
   }
   
+  @discardableResult
   public static func bottom(_ view: View, minus: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -278,6 +297,7 @@ public extension CartographyKit{
     return c
   }
   
+  @discardableResult
   public static func height(_ view: View, dividedBy: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -287,6 +307,7 @@ public extension CartographyKit{
     return c
   }
   
+  @discardableResult
   public static func height(_ view: View, multipliedBy: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -296,6 +317,7 @@ public extension CartographyKit{
     return c
   }
   
+  @discardableResult
   public static func width(_ view: View, dividedBy: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -305,6 +327,7 @@ public extension CartographyKit{
     return c
   }
   
+  @discardableResult
   public static func width(_ view: View, multipliedBy: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -314,6 +337,7 @@ public extension CartographyKit{
     return c
   }
   
+  @discardableResult
   public static func left(_ view: View, minus: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -323,6 +347,7 @@ public extension CartographyKit{
     return c
   }
   
+  @discardableResult
   public static func left(_ view: View, plus: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -332,6 +357,7 @@ public extension CartographyKit{
     return c
   }
   
+  @discardableResult
   public static func right(_ view: View, minus: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -341,6 +367,7 @@ public extension CartographyKit{
     return c
   }
   
+  @discardableResult
   public static func right(_ view: View, plus: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -350,6 +377,7 @@ public extension CartographyKit{
     return c
   }
   
+  @discardableResult
   public static func centerX(_ view: View, dividedBy: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -359,6 +387,7 @@ public extension CartographyKit{
     return c
   }
   
+  @discardableResult
   public static func centerX(_ view: View, multipliedBy: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -368,6 +397,7 @@ public extension CartographyKit{
     return c
   }
   
+  @discardableResult
   public static func centerY(_ view: View, dividedBy: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -377,6 +407,7 @@ public extension CartographyKit{
     return c
   }
   
+  @discardableResult
   public static func centerY(_ view: View, multipliedBy: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -386,6 +417,7 @@ public extension CartographyKit{
     return c
   }
   
+  @discardableResult
   public static func centerY(_ view: View, plus: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -395,6 +427,7 @@ public extension CartographyKit{
     return c
   }
   
+  @discardableResult
   public static func centerY(_ view: View, minus: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -404,6 +437,7 @@ public extension CartographyKit{
     return c
   }
   
+  @discardableResult
   public static func centerYToView(_ view1: View, view2: View) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view1, view2){ view1, view2 in
@@ -473,6 +507,7 @@ public extension CartographyKit{
 //MARK: - Halfs
 public extension CartographyKit{
   
+  @discardableResult
   public static func halfWidth(_ view: View) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -482,6 +517,7 @@ public extension CartographyKit{
     return c
   }
   
+  @discardableResult
   public static func halfHeight(_ view: View) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -561,6 +597,8 @@ public extension CartographyKit{
 
 //MARK: - Equals
 extension CartographyKit: LayoutConstrainEquals{
+  
+  @discardableResult
   public static func width(_ view: View, equals: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
@@ -569,6 +607,7 @@ extension CartographyKit: LayoutConstrainEquals{
     return c
   }
   
+  @discardableResult
   public static func height(_ view: View, equals: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view){ view in
