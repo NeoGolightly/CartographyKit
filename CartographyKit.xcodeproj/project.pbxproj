@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF77F9B01EFEF0F700BD6344 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF77F9AF1EFEF0F700BD6344 /* Cartography.framework */; };
 		DF77F9B21EFEF0FD00BD6344 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF77F9B11EFEF0FD00BD6344 /* Cartography.framework */; };
+		DF780F361EFFE7BC00FBBD64 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF780F351EFFE7BC00FBBD64 /* Cartography.framework */; };
 		DF79EA791D0D8BA000BE6573 /* CartographyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DF79EA781D0D8BA000BE6573 /* CartographyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF79EA8E1D0D962900BE6573 /* CartographyKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF79EA8D1D0D962900BE6573 /* CartographyKit.swift */; };
 		DF79EAB21D0DBCF300BE6573 /* Info-macOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF79EAB11D0DBCF300BE6573 /* Info-macOS.plist */; };
@@ -17,6 +17,7 @@
 /* Begin PBXFileReference section */
 		DF77F9AF1EFEF0F700BD6344 /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = "../../Libraries/Cartography 1.1.0/build/Debug-iphoneos/Cartography.framework"; sourceTree = "<group>"; };
 		DF77F9B11EFEF0FD00BD6344 /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = "../../Libraries/Cartography 1.1.0/build/Debug/Cartography.framework"; sourceTree = "<group>"; };
+		DF780F351EFFE7BC00FBBD64 /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/CartographyKit-girmjfhaokhfgghieadenisqcfqw/Build/Products/Debug-iphoneos/Cartography.framework"; sourceTree = "<group>"; };
 		DF79EA241D0D882600BE6573 /* CartographyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CartographyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF79EA641D0D8A4200BE6573 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		DF79EA781D0D8BA000BE6573 /* CartographyKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartographyKit.h; sourceTree = "<group>"; };
@@ -34,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF77F9B01EFEF0F700BD6344 /* Cartography.framework in Frameworks */,
+				DF780F361EFFE7BC00FBBD64 /* Cartography.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +93,7 @@
 		DF9D9CF21EFDA541001AAB64 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF780F351EFFE7BC00FBBD64 /* Cartography.framework */,
 				DF77F9B11EFEF0FD00BD6344 /* Cartography.framework */,
 				DF77F9AF1EFEF0F700BD6344 /* Cartography.framework */,
 				DFE6A3091EFEE5DF00FD385E /* Cartography.framework */,

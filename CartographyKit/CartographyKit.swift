@@ -501,6 +501,18 @@ public extension CartographyKit{
     }
   }
   
+  @discardableResult
+  public static func square(_ view: View, equals: CGFloat) -> [NSLayoutConstraint?]{
+    var c: NSLayoutConstraint?
+    var d: NSLayoutConstraint?
+    constrain(view){ view in
+      c = view.width == equals
+      d = view.height == equals
+    }
+    return [c, d]
+  }
+  
+  
 }
 
 
