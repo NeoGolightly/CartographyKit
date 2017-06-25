@@ -652,8 +652,8 @@ extension CartographyKit: LayoutConstrainToOtherView{
 extension CartographyKit: LayoutConstrainEdges{
   public static func edges(_ view: View, plus: CGFloat) {
     constrain(view){ view in
-      view.top == view.superview!.top + plus
-      view.left == view.superview!.left + plus
+      view.top == view.superview!.top - plus
+      view.left == view.superview!.left - plus
       view.bottom == view.superview!.bottom + plus
       view.right == view.superview!.right + plus
       return
@@ -662,8 +662,8 @@ extension CartographyKit: LayoutConstrainEdges{
   
   public static func edges(_ view: View, minus: CGFloat) {
     constrain(view){ view in
-      view.top == view.superview!.top - minus
-      view.left == view.superview!.left - minus
+      view.top == view.superview!.top + minus
+      view.left == view.superview!.left + minus
       view.bottom == view.superview!.bottom - minus
       view.right == view.superview!.right - minus
       return
