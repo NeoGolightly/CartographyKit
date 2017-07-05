@@ -647,6 +647,13 @@ extension CartographyKit: LayoutConstrainToOtherView{
       return
     }
   }
+  
+  public static func bottomToOtherViewsBottom(_ view1: View, otherView: View, plus: CGFloat) {
+    constrain(view1, otherView){view1, otherView in
+      view1.bottom == otherView.bottom + plus
+      return
+    }
+  }
 }
 
 extension CartographyKit: LayoutConstrainEdges{
