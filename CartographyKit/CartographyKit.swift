@@ -654,6 +654,13 @@ extension CartographyKit: LayoutConstrainToOtherView{
       return
     }
   }
+  
+  public static func topToOtherViewsTop(_ view1: View, otherView: View, plus: CGFloat) {
+    constrain(view1, otherView){view1, otherView in
+      view1.top == otherView.top + plus
+      return
+    }
+  }
 }
 
 extension CartographyKit: LayoutConstrainEdges{
