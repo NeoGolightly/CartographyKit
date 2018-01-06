@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../Libraries/Cartography 1.1.0/Cartography.xcodeproj">
+      location = "group:../Cartography 3.0.1/Cartography.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:CartographyKit.xcodeproj">
