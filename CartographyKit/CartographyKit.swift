@@ -47,7 +47,7 @@ extension CartographyKit: ToOtherViews{
   public static func topToOtherViewsBottom(_ view1: View, otherView: View, plus: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view1, otherView){ view1, otherView in
-      c = view1.top == otherView.bottom
+      c = view1.top == otherView.bottom + plus
       return
     }
     return c
@@ -57,7 +57,7 @@ extension CartographyKit: ToOtherViews{
   public static func bottomToOtherViewsTop(_ view1: View, otherView: View, minus: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view1, otherView){ view1, otherView in
-      c = view1.bottom == otherView.top
+      c = view1.bottom == otherView.top - minus
       return
     }
     return c
@@ -67,7 +67,7 @@ extension CartographyKit: ToOtherViews{
   public static func topToOtherViewsCenterX(_ view1: View, otherView: View, plus: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view1, otherView){ view1, otherView in
-      c = view1.top == otherView.centerY
+      c = view1.top == otherView.centerY + plus
       return
     }
     return c
