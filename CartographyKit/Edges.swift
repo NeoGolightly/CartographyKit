@@ -72,6 +72,7 @@ extension CartographyKit: BasicEdges{
 }
 
 extension CartographyKit: EdgesInsetsPlus{
+  @discardableResult
   public static func edges(_ view: View, plus: CGFloat) -> [NSLayoutConstraint?] {
     var c: [NSLayoutConstraint?]  = []
     constrain(view){ view in
@@ -84,6 +85,7 @@ extension CartographyKit: EdgesInsetsPlus{
 }
 
 extension CartographyKit: EdgesInsetsMinus{
+  @discardableResult
   public static func edges(_ view: View, minus: CGFloat) -> [NSLayoutConstraint?]{
     var c: [NSLayoutConstraint?]  = []
     constrain(view){ view in
@@ -95,6 +97,7 @@ extension CartographyKit: EdgesInsetsMinus{
 }
 
 extension CartographyKit: EdgesInsets{
+  @discardableResult
   public static func edgesInset(_ view: View, all: CGFloat) -> [NSLayoutConstraint?] {
     var c: [NSLayoutConstraint?]  = []
     constrain(view){ view in
@@ -104,6 +107,7 @@ extension CartographyKit: EdgesInsets{
     return c
   }
   
+  @discardableResult
   public static func edgesInset(_ view: View, horizontally horizontal: CGFloat) -> [NSLayoutConstraint?] {
     var c: [NSLayoutConstraint?]  = []
     constrain(view){ view in
@@ -113,6 +117,7 @@ extension CartographyKit: EdgesInsets{
     return c
   }
   
+  @discardableResult
   public static func edgesInset(_ view: View, vertically vertical: CGFloat) -> [NSLayoutConstraint?] {
     var c: [NSLayoutConstraint?]  = []
     constrain(view){ view in
@@ -122,6 +127,7 @@ extension CartographyKit: EdgesInsets{
     return c
   }
   
+  @discardableResult
   public static func edgesInset(_ view: View, horizontally horizontal: CGFloat, vertically vertical: CGFloat) -> [NSLayoutConstraint?] {
     var c: [NSLayoutConstraint?]  = []
     constrain(view){ view in
@@ -131,6 +137,7 @@ extension CartographyKit: EdgesInsets{
     return c
   }
   
+  @discardableResult
   public static func edgesInset(_ view: View, top: CGFloat, leading: CGFloat, bottom: CGFloat, trailing: CGFloat) -> [NSLayoutConstraint?] {
     var c: [NSLayoutConstraint?]  = []
     constrain(view){ view in
@@ -140,6 +147,7 @@ extension CartographyKit: EdgesInsets{
     return c
   }
   
+  @discardableResult
   public static func edgesWithinMargins(_ view: View, all: CGFloat) -> [NSLayoutConstraint?] {
     var c: [NSLayoutConstraint?]  = []
     constrain(view){ view in
@@ -149,6 +157,7 @@ extension CartographyKit: EdgesInsets{
     return c
   }
   
+  @discardableResult
   public static func edgesWithinMargins(_ view: View, horizontally horizontal: CGFloat) -> [NSLayoutConstraint?] {
     var c: [NSLayoutConstraint?]  = []
     constrain(view){ view in
@@ -158,6 +167,7 @@ extension CartographyKit: EdgesInsets{
     return c
   }
   
+  @discardableResult
   public static func edgesWithinMargins(_ view: View, vertically vertical: CGFloat) -> [NSLayoutConstraint?] {
     var c: [NSLayoutConstraint?]  = []
     constrain(view){ view in
@@ -167,6 +177,7 @@ extension CartographyKit: EdgesInsets{
     return c
   }
   
+  @discardableResult
   public static func edgesWithinMargins(_ view: View, horizontally horizontal: CGFloat, vertically vertical: CGFloat) -> [NSLayoutConstraint?] {
     var c: [NSLayoutConstraint?]  = []
     constrain(view){ view in
@@ -176,6 +187,7 @@ extension CartographyKit: EdgesInsets{
     return c
   }
   
+  @discardableResult
   public static func edgesWithinMargins(_ view: View, top: CGFloat, leading: CGFloat, bottom: CGFloat, trailing: CGFloat) -> [NSLayoutConstraint?] {
     var c: [NSLayoutConstraint?]  = []
     constrain(view){ view in
@@ -185,6 +197,7 @@ extension CartographyKit: EdgesInsets{
     return c
   }
   
+  @discardableResult
   public static func edges(_ view: View, insets: UIEdgeInsets) -> [NSLayoutConstraint?] {
     var c: [NSLayoutConstraint?]  = []
     constrain(view){ view in

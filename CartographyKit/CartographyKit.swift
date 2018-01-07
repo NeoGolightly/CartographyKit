@@ -34,10 +34,43 @@ private protocol BasicBaselines{
 //To other view(s)
 ////////////////////////////////////////////////////////////////////////////////////////////////
 private protocol ToOtherViews{
-  static func topToOtherViewsBottom(_ view1: View, otherView: View, plus: CGFloat)
-  static func bottomToOtherViewsTop(_ view1: View, otherView: View, minus: CGFloat)
+  static func topToOtherViewsBottom(_ view1: View, otherView: View, plus: CGFloat) -> NSLayoutConstraint?
+  static func bottomToOtherViewsTop(_ view1: View, otherView: View, minus: CGFloat) -> NSLayoutConstraint?
+  static func topToOtherViewsCenterX(_ view1: View, otherView: View, plus: CGFloat) -> NSLayoutConstraint?
 }
 
+
+////////////////////
+
+extension CartographyKit: ToOtherViews{
+
+  public static func topToOtherViewsBottom(_ view1: View, otherView: View, plus: CGFloat) -> NSLayoutConstraint?{
+    var c: NSLayoutConstraint?
+    constrain(view1, otherView){ view1, otherView in
+      c = view1.top == otherView.bottom
+      return
+    }
+    return c
+  }
+  
+  public static func bottomToOtherViewsTop(_ view1: View, otherView: View, minus: CGFloat) -> NSLayoutConstraint?{
+    var c: NSLayoutConstraint?
+    constrain(view1, otherView){ view1, otherView in
+      c = view1.bottom == otherView.top
+      return
+    }
+    return c
+  }
+  
+  public static func topToOtherViewsCenterX(_ view1: View, otherView: View, plus: CGFloat) -> NSLayoutConstraint?{
+    var c: NSLayoutConstraint?
+    constrain(view1, otherView){ view1, otherView in
+      c = view1.top == otherView.centerY
+      return
+    }
+    return c
+  }
+}
 
 private protocol LayoutGuides{
   static func topToLayoutGuide(_ view: View, layoutguide: LayoutSupport) -> NSLayoutConstraint?
@@ -45,6 +78,7 @@ private protocol LayoutGuides{
 }
 
 extension CartographyKit: LayoutGuides{
+  @discardableResult
   public static func topToLayoutGuide(_ view: View, layoutguide: LayoutSupport) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view, layoutguide){ view, layoutguide in
@@ -54,6 +88,7 @@ extension CartographyKit: LayoutGuides{
     return c
   }
   
+  @discardableResult
   public static func topBottomLayoutGuide(_ view: View, layoutguide: LayoutSupport) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view, layoutguide){ view, layoutguide in
