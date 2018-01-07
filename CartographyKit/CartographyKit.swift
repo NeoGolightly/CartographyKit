@@ -42,6 +42,29 @@ private protocol ToOtherViews{
 
 ////////////////////
 
+extension CartographyKit{
+  @discardableResult
+  public static func centerYToView(_ view1: View, view2: View) -> NSLayoutConstraint?{
+    var c: NSLayoutConstraint?
+    constrain(view1, view2){ view1, view2 in
+      c = view1.centerY == view2.centerY
+      return
+    }
+    return c
+  }
+  
+  @discardableResult
+  public static func centerXToView(_ view1: View, view2: View) -> NSLayoutConstraint?{
+    var c: NSLayoutConstraint?
+    constrain(view1, view2){ view1, view2 in
+      c = view1.centerX == view2.centerX
+      return
+    }
+    return c
+  }
+  
+}
+
 extension CartographyKit: ToOtherViews{
   @discardableResult
   public static func topToOtherViewsBottom(_ view1: View, otherView: View, plus: CGFloat) -> NSLayoutConstraint?{
