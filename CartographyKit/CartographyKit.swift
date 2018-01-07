@@ -43,7 +43,7 @@ private protocol ToOtherViews{
 ////////////////////
 
 extension CartographyKit: ToOtherViews{
-
+  @discardableResult
   public static func topToOtherViewsBottom(_ view1: View, otherView: View, plus: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view1, otherView){ view1, otherView in
@@ -53,6 +53,7 @@ extension CartographyKit: ToOtherViews{
     return c
   }
   
+  @discardableResult
   public static func bottomToOtherViewsTop(_ view1: View, otherView: View, minus: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view1, otherView){ view1, otherView in
@@ -62,6 +63,7 @@ extension CartographyKit: ToOtherViews{
     return c
   }
   
+  @discardableResult
   public static func topToOtherViewsCenterX(_ view1: View, otherView: View, plus: CGFloat) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view1, otherView){ view1, otherView in
