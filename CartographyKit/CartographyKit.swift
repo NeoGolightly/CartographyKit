@@ -45,7 +45,7 @@ private protocol LayoutGuides{
 }
 
 extension CartographyKit: LayoutGuides{
-  static func topToLayoutGuide(_ view: View, layoutguide: LayoutSupport) -> NSLayoutConstraint?{
+  public static func topToLayoutGuide(_ view: View, layoutguide: LayoutSupport) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view, layoutguide){ view, layoutguide in
       c = view.top == layoutguide.bottom
@@ -54,7 +54,7 @@ extension CartographyKit: LayoutGuides{
     return c
   }
   
-  static func topBottomLayoutGuide(_ view: View, layoutguide: LayoutSupport) -> NSLayoutConstraint?{
+  public static func topBottomLayoutGuide(_ view: View, layoutguide: LayoutSupport) -> NSLayoutConstraint?{
     var c: NSLayoutConstraint?
     constrain(view, layoutguide){ view, layoutguide in
       c = view.bottom == layoutguide.top
