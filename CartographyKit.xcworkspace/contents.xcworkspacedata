@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CaertographyKitTests/CaertographyKitTests.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:../Cartography 3.0.1/Cartography.xcodeproj">
    </FileRef>
    <FileRef

@@ -7,14 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B522B4A720018D7F0075E7DC /* Squares.swift in Sources */ = {isa = PBXBuildFile; fileRef = B522B4A620018D7F0075E7DC /* Squares.swift */; };
+		B522B4A920018E170075E7DC /* Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = B522B4A820018E170075E7DC /* Edges.swift */; };
+		B522B4AB200192AE0075E7DC /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B522B4AA200192AE0075E7DC /* Sizes.swift */; };
+		B522B4AD200193D40075E7DC /* SizesModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B522B4AC200193D40075E7DC /* SizesModifier.swift */; };
+		B560988020019AEA000596ED /* CartographyKit.swift in Headers */ = {isa = PBXBuildFile; fileRef = B5C3E7EC20015ABF00AD4063 /* CartographyKit.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		B56098902001A443000596ED /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56098912001A443000596ED /* Cartography.framework */; };
+		B5C3E7EF200165C900AD4063 /* CartographyKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E7EC20015ABF00AD4063 /* CartographyKit.swift */; };
+		B5C3E7F12001777900AD4063 /* BasicPositions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E7F02001777900AD4063 /* BasicPositions.swift */; };
+		B5C3E7F3200177E600AD4063 /* BasicPositionsModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E7F2200177E600AD4063 /* BasicPositionsModifier.swift */; };
 		DF77F9B21EFEF0FD00BD6344 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF77F9B11EFEF0FD00BD6344 /* Cartography.framework */; };
-		DF780F361EFFE7BC00FBBD64 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF780F351EFFE7BC00FBBD64 /* Cartography.framework */; };
 		DF79EA791D0D8BA000BE6573 /* CartographyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DF79EA781D0D8BA000BE6573 /* CartographyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF79EA8E1D0D962900BE6573 /* CartographyKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF79EA8D1D0D962900BE6573 /* CartographyKit.swift */; };
 		DF79EAB21D0DBCF300BE6573 /* Info-macOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF79EAB11D0DBCF300BE6573 /* Info-macOS.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B522B4A620018D7F0075E7DC /* Squares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Squares.swift; sourceTree = "<group>"; };
+		B522B4A820018E170075E7DC /* Edges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edges.swift; sourceTree = "<group>"; };
+		B522B4AA200192AE0075E7DC /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		B522B4AC200193D40075E7DC /* SizesModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizesModifier.swift; sourceTree = "<group>"; };
+		B56098912001A443000596ED /* Cartography.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cartography.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5C3E7EC20015ABF00AD4063 /* CartographyKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartographyKit.swift; sourceTree = "<group>"; };
+		B5C3E7F02001777900AD4063 /* BasicPositions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPositions.swift; sourceTree = "<group>"; };
+		B5C3E7F2200177E600AD4063 /* BasicPositionsModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPositionsModifier.swift; sourceTree = "<group>"; };
 		DF77F9AF1EFEF0F700BD6344 /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = "../../Libraries/Cartography 1.1.0/build/Debug-iphoneos/Cartography.framework"; sourceTree = "<group>"; };
 		DF77F9B11EFEF0FD00BD6344 /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = "../../Libraries/Cartography 1.1.0/build/Debug/Cartography.framework"; sourceTree = "<group>"; };
 		DF780F351EFFE7BC00FBBD64 /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/CartographyKit-girmjfhaokhfgghieadenisqcfqw/Build/Products/Debug-iphoneos/Cartography.framework"; sourceTree = "<group>"; };
@@ -24,7 +39,7 @@
 		DF79EA7E1D0D8DE700BE6573 /* CartographyKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CartographyKit.podspec; sourceTree = "<group>"; };
 		DF79EA7F1D0D8DE700BE6573 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DF79EA801D0D8DE700BE6573 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		DF79EA8D1D0D962900BE6573 /* CartographyKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartographyKit.swift; sourceTree = "<group>"; };
+		DF79EA8D1D0D962900BE6573 /* CartographyKit old.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CartographyKit old.swift"; sourceTree = "<group>"; };
 		DF79EAA91D0DBCD400BE6573 /* CartographyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CartographyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF79EAB11D0DBCF300BE6573 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		DFE6A3091EFEE5DF00FD385E /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/MyLyrics-ewsubvzemrkczkgitwnknuqdpzcr/Build/Products/Debug-iphoneos/Cartography.framework"; sourceTree = "<group>"; };
@@ -35,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF780F361EFFE7BC00FBBD64 /* Cartography.framework in Frameworks */,
+				B56098902001A443000596ED /* Cartography.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +87,14 @@
 		DF79EA631D0D894000BE6573 /* CartographyKit */ = {
 			isa = PBXGroup;
 			children = (
-				DF79EA8D1D0D962900BE6573 /* CartographyKit.swift */,
+				DF79EA8D1D0D962900BE6573 /* CartographyKit old.swift */,
+				B5C3E7EC20015ABF00AD4063 /* CartographyKit.swift */,
+				B5C3E7F02001777900AD4063 /* BasicPositions.swift */,
+				B5C3E7F2200177E600AD4063 /* BasicPositionsModifier.swift */,
+				B522B4AA200192AE0075E7DC /* Sizes.swift */,
+				B522B4AC200193D40075E7DC /* SizesModifier.swift */,
+				B522B4A620018D7F0075E7DC /* Squares.swift */,
+				B522B4A820018E170075E7DC /* Edges.swift */,
 				DF79EA781D0D8BA000BE6573 /* CartographyKit.h */,
 				DF79EAB11D0DBCF300BE6573 /* Info-macOS.plist */,
 				DF79EA641D0D8A4200BE6573 /* Info-iOS.plist */,
@@ -93,6 +115,7 @@
 		DF9D9CF21EFDA541001AAB64 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B56098912001A443000596ED /* Cartography.framework */,
 				DF780F351EFFE7BC00FBBD64 /* Cartography.framework */,
 				DF77F9B11EFEF0FD00BD6344 /* Cartography.framework */,
 				DF77F9AF1EFEF0F700BD6344 /* Cartography.framework */,
@@ -109,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF79EA791D0D8BA000BE6573 /* CartographyKit.h in Headers */,
+				B560988020019AEA000596ED /* CartographyKit.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +154,7 @@
 				DF79EA201D0D882600BE6573 /* Frameworks */,
 				DF79EA211D0D882600BE6573 /* Headers */,
 				DF79EA221D0D882600BE6573 /* Resources */,
+				B522B46A200186F50075E7DC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -164,7 +189,7 @@
 		DF79EA191D0D87C500BE6573 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0920;
 				TargetAttributes = {
 					DF79EA231D0D882600BE6573 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -213,12 +238,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B522B46A200186F50075E7DC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"TODO:|FIXME:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 \\\n| xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" \\\n| perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DF79EA1F1D0D882600BE6573 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF79EA8E1D0D962900BE6573 /* CartographyKit.swift in Sources */,
+				B522B4AB200192AE0075E7DC /* Sizes.swift in Sources */,
+				B522B4A920018E170075E7DC /* Edges.swift in Sources */,
+				B522B4A720018D7F0075E7DC /* Squares.swift in Sources */,
+				B5C3E7EF200165C900AD4063 /* CartographyKit.swift in Sources */,
+				B5C3E7F12001777900AD4063 /* BasicPositions.swift in Sources */,
+				B522B4AD200193D40075E7DC /* SizesModifier.swift in Sources */,
+				B5C3E7F3200177E600AD4063 /* BasicPositionsModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,12 +283,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -264,12 +317,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -308,7 +367,8 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -346,7 +406,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -375,7 +435,8 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -405,7 +466,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
